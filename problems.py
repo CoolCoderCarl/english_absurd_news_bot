@@ -8,5 +8,7 @@ problems = [
     "bad weather",
     "tap water",
     "computer games problem",
-    "low taxes"
+    "low taxes",
+    "cold water",
+    "hot water"
 ]

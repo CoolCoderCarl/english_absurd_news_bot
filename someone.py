@@ -1,4 +1,5 @@
 clever = [
+    "everyone",
     "Head Ministry of Health",
     "Deputy Ministry of Health",
     "Head Ministry of Education",
