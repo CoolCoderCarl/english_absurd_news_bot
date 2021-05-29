@@ -1,0 +1,13 @@
+[Unit]
+Description=News Generator
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3.7 /root/newsGenerator/bot.py
+Environment=PYTHONUNBUFFERED=1
+Restart=always
+Type=notify
+#User=ebn_bot
+
+[Install]
+WantedBy=default.target
