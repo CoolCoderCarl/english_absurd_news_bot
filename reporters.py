@@ -6,5 +6,7 @@ reporter = [
     "State media",
     "Regional Media",
     "Republic Media",
-    "Fastest News Media Inc"
+    "Fastest News Media Inc",
+    "Slowest News Media Inc",
+    "Fast News Media Corp"
 ]
