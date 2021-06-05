@@ -10,5 +10,8 @@ problems = [
     "computer games problem",
     "low taxes",
     "cold water",
-    "hot water"
+    "hot water",
+    "low salaries",
+    "high salaries",
+    "someone start business"
 ]

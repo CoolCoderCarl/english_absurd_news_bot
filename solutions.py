@@ -6,5 +6,7 @@ solutions = [
     "decrease taxes",
     "protect Siberia",
     "the guilty will be punished",
-    "the guilty will be found"
+    "the guilty will be found",
+    "parents are guilty",
+    "activists are guilty"
 ]

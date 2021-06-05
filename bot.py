@@ -32,6 +32,8 @@ def send_news(message):
 
 	bot.send_message(message.chat.id, randomNews)
 
+	bot.send_poll(message.chat.id, "Do you like this news ?", ["Yes", "No", "Kurwa !", "I do not know any english word"],
+				  is_anonymous=False)
 
 @bot.message_handler(commands=['help'])
 def help(message):
