@@ -1,3 +1,4 @@
+import os
 import telebot
 import random
 import problems
@@ -6,7 +7,8 @@ import someone
 import solutions
 import reporters
 
-bot = telebot.TeleBot(token="NOTOKENHERE")
+api_token = os.environ['API_TOKEN']
+bot = telebot.TeleBot(token=api_token)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
