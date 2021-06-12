@@ -1,11 +1,11 @@
 import os
-import telebot
 import random
-import problems
-import discovered
-import someone
-import solutions
-import reporters
+import telebot
+import items.problems
+import items.discovered
+import items.someone
+import items.solutions
+import items.reporters
 
 api_token = os.environ['API_TOKEN']
 bot = telebot.TeleBot(token=api_token)
@@ -25,12 +25,12 @@ def send_news(message):
 
 	randomNews = ("INNOVATION !!!" + "\n" +
 			"=====================================================" + "\n" +
-			"There were discovered " + random.choice(problems.problems) +
-			" " + random.choice(discovered.when) +
-			" and " + random.choice(someone.clever) +
-			" decide to " + random.choice(solutions.solutions) + "\n" +
+			"There were discovered " + random.choice(items.problems.problems) +
+			" " + random.choice(items.discovered.when) +
+			" and " + random.choice(items.someone.clever) +
+			" decide to " + random.choice(items.solutions.solutions) + "\n" +
 			"=====================================================" + "\n" +
-			"The reporter is: " + random.choice(reporters.reporter))
+			"The reporter is: " + random.choice(items.reporters.reporter))
 
 	bot.send_message(message.chat.id, randomNews)
 
