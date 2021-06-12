@@ -4,7 +4,7 @@ Generator for random funny news
 
 ## Start 
 
-First of all clone repo`git clone https://github.com/CoolCoderCarl/newsGenerator` then go to dir `cd newsGenerator/`
+First of all clone repo `git clone https://github.com/CoolCoderCarl/newsGenerator` then go to dir `cd newsGenerator/`
 
 ### Systemd method
 1) `cp english_absurd_news_bot.* /etc/systemd/system/`
