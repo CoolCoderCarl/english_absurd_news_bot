@@ -6,6 +6,7 @@ import items.discovered
 import items.someone
 import items.solutions
 import items.reporters
+import items.titles
 
 api_token = os.environ['API_TOKEN']
 bot = telebot.TeleBot(token=api_token)
@@ -23,7 +24,7 @@ def send_welcome(message):
 @bot.message_handler(commands=['news'])
 def send_news(message):
 
-	randomNews = ("INNOVATION !!!" + "\n" +
+	randomNews = (random.choice(items.titles.titles) + "\n" +
 			"=====================================================" + "\n" +
 			"There were discovered " + random.choice(items.problems.problems) +
 			" " + random.choice(items.discovered.when) +
