@@ -13,5 +13,8 @@ problems = [
     "hot water",
     "low salaries",
     "high salaries",
-    "someone start business"
+    "someone start business",
+    "unknown blogger was poisoned",
+    "some politician was killed",
+    "nobody is vaccinated"
 ]

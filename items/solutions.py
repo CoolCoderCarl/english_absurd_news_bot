@@ -8,5 +8,14 @@ solutions = [
     "the guilty will be punished",
     "the guilty will be found",
     "parents are guilty",
-    "activists are guilty"
+    "activists are guilty",
+    "liberals are guilty",
+    "youth are guilty",
+    "youth liberals are guilty",
+    "pupils are guilty",
+    "pupils liberals are guilty",
+    "the guilty are foreign agents",
+    "the perpetrators are foreign agents",
+    "enemies are guilty",
+    "everybody have to be vaccinated"
 ]

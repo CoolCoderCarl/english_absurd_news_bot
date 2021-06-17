@@ -29,7 +29,7 @@ def send_news(message):
 			"There were discovered " + random.choice(items.problems.problems) +
 			" " + random.choice(items.discovered.when) +
 			" and " + random.choice(items.someone.clever) +
-			" decide to " + random.choice(items.solutions.solutions) + "\n" +
+			" decide that " + random.choice(items.solutions.solutions) + "\n" +
 			"=====================================================" + "\n" +
 			"The reporter is: " + random.choice(items.reporters.reporter))
 
