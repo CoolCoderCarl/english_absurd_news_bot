@@ -1,6 +1,7 @@
 # News generator
 
 Generator for random funny news
+API - https://github.com/eternnoir/pyTelegramBotAPI
 
 ## Start 
 
