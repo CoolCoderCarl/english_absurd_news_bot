@@ -6,5 +6,7 @@ titles = [
     "Best Solution Ever",
     "Wisdom Decision",
     "Worst Solution",
-    "Worst Solution Ever"
+    "Worst Solution Ever",
+    "Achievement",
+    "Another Achievement"
 ]

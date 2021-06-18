@@ -17,5 +17,11 @@ solutions = [
     "the guilty are foreign agents",
     "the perpetrators are foreign agents",
     "enemies are guilty",
-    "everybody have to be vaccinated"
+    "everybody have to be vaccinated",
+    "build TikTok-houses",
+    "nothing can be done",
+    "a scooter drivers are guilty",
+    "anime is a big problem",
+    "need to edit Constitution",
+    "VPN need to be blocked"
 ]
