@@ -8,5 +8,6 @@ reporter = [
     "Republic Media",
     "Fastest News Media Inc",
     "Slowest News Media Inc",
-    "Fast News Media Corp"
+    "Fast News Media Corp",
+    "Slow News Media Corp",
 ]
