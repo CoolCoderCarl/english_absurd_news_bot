@@ -1,4 +1,3 @@
-
 problems = [
     "high taxes",
     "poor medicine",

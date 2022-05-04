@@ -11,5 +11,5 @@ titles = [
     "Another Achievement",
     "Negative Growth",
     "The Greatest Move Ever",
-    "Victory !"
+    "Victory !",
 ]
