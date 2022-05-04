@@ -24,4 +24,9 @@ solutions = [
     "anime is a big problem",
     "need to edit Constitution",
     "VPN need to be blocked",
+    "start resource mobilization",
+    "ask the people to return back",
+    "create greatest benefits for IT",
+    "to late to think",
+    "allow piracy",
 ]

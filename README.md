@@ -19,7 +19,7 @@ First of all clone repo `git clone https://github.com/CoolCoderCarl/newsGenerato
 
 ### P.S.
 Or just pull it from here - https://hub.docker.com/repository/docker/h0d0user/news_generator  
-Like this - `docker pull h0d0user/news_generator:2.0`
+Like this - `docker pull h0d0user/news_generator:latest`
 
 ### Run script - in developing
 You can try to use simple script `run.sh` which require four arguments   

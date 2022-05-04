@@ -11,4 +11,7 @@ when = [
     "at this summer",
     "at this fall",
     "right now",
+    "30 days ago",
+    "60 days ago",
+    "70 days ago",
 ]
