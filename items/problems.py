@@ -1,3 +1,4 @@
+
 problems = [
     "high taxes",
     "poor medicine",
@@ -30,4 +31,5 @@ problems = [
     "the flagship was sunk from the shore",
     "someone attack the famous reporter",
     "there are no problems here",
+    "default is close",
 ]

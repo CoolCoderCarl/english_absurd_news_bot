@@ -29,4 +29,5 @@ solutions = [
     "create greatest benefits for IT",
     "to late to think",
     "allow piracy",
+    "default is not dangerous",
 ]
