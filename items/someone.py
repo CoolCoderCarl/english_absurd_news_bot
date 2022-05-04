@@ -15,5 +15,5 @@ clever = [
     "Mayor of the city",
     "Deputy of the city",
     "Mayor of the region",
-    "Deputy of the region"
+    "Deputy of the region",
 ]

@@ -8,5 +8,5 @@ titles = [
     "Worst Solution",
     "Worst Solution Ever",
     "Achievement",
-    "Another Achievement"
+    "Another Achievement",
 ]

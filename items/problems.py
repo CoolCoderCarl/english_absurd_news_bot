@@ -25,5 +25,5 @@ problems = [
     "unemployment falls",
     "enemies are everywhere",
     "the forest is burning",
-    "trains derailed"
+    "trains derailed",
 ]
