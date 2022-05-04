@@ -23,5 +23,5 @@ solutions = [
     "a scooter drivers are guilty",
     "anime is a big problem",
     "need to edit Constitution",
-    "VPN need to be blocked"
+    "VPN need to be blocked",
 ]

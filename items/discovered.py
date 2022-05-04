@@ -10,5 +10,5 @@ when = [
     "at this spring",
     "at this summer",
     "at this fall",
-    "right now"
+    "right now",
 ]
