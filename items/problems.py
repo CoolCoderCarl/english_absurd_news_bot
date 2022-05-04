@@ -26,4 +26,9 @@ problems = [
     "enemies are everywhere",
     "the forest is burning",
     "trains derailed",
+    "special operation successfully failed",
+    "the flagship was sunk from the shore",
+    "someone attack the famous reporter",
+    "there are no problems here",
+    "default is close",
 ]
