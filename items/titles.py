@@ -9,4 +9,7 @@ titles = [
     "Worst Solution Ever",
     "Achievement",
     "Another Achievement",
+    "Negative Growth",
+    "The Greatest Move Ever",
+    "Victory !",
 ]

@@ -16,4 +16,6 @@ clever = [
     "Deputy of the city",
     "Mayor of the region",
     "Deputy of the region",
+    "President of The Greatest Country Ever",
+    "Central Bank Director",
 ]
