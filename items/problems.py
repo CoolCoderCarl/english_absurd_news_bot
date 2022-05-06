@@ -31,4 +31,8 @@ problems = [
     "someone attack the famous reporter",
     "there are no problems here",
     "default is close",
+    "one more ship was sunk to the bottom",
+    "the satanists attack the city",
+    "the black mages attack the city",
+    "the cannibals attack the city",
 ]
