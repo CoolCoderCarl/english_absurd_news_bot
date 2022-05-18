@@ -8,6 +8,7 @@ on:
       - '.dockerignore'
       - '.gitignore'
       - 'docker-compose.yaml'
+      - 'english_absurd_news_bot.*'
 
 jobs:
 
