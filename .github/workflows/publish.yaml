@@ -6,6 +6,27 @@ on:
 
 jobs:
 
+  prepare:
+    name: Prepare env & label
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: feature
+
+      - name: Step To run on failure
+        if: ${{ failure() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: html
+          message: |
+            <b>!!! FAILED !!!</b>
+            <b>Failed job:</b> https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            See changes: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+
   docker:
     runs-on: ubuntu-latest
     name: Publish on DockerHub
@@ -27,11 +48,6 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Search
-        run: |
-          pwd
-          ls -la
 
       - name: Build and push
         id: push_image
@@ -61,7 +77,7 @@ jobs:
   telegram:
     runs-on: ubuntu-latest
     name: Notification
-    needs: docker
+    needs: [ prepare, docker ]
     steps:
 
       - name: Notify in telegram after image was pushed
