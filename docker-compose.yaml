@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  bot:
+    container_name: news_generator
+    image: h0d0user/news_generator:latest
+    restart: always
+    network_mode: host
+    environment:
+      - API_TOKEN=YOURTOKEN

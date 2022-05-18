@@ -1,0 +1,20 @@
+# Git
+.git
+.github
+.gitignore
+.gitattributes
+
+# Docker
+docker-compose.yml
+**/Dockerfile
+.docker
+.dockerignore
+
+# Meta
+README.md
+LICENSE
+changelog.json
+
+# Additional
+run.sh
+english_absurd_news_bot.*
