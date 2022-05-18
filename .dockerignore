@@ -13,7 +13,6 @@ docker-compose.yml
 # Meta
 README.md
 LICENSE
-requirements.txt
 changelog.json
 
 # Additional
