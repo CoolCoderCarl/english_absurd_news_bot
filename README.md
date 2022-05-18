@@ -6,7 +6,7 @@ API - https://github.com/eternnoir/pyTelegramBotAPI
 ## Prehistory
 This bot was developed for fun and having a good time
 
-> Why not create a funny bot ?
+> Why not create a funny bot ?  
 > (c) Author
 
 Enjoy.
