@@ -6,6 +6,27 @@ on:
 
 jobs:
 
+  prepare:
+    name: Prepare env & label
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: feature
+
+      - name: Step To run on failure
+        if: ${{ failure() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: html
+          message: |
+            <b>!!! FAILED !!!</b>
+            <b>Failed job:</b> https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            See changes: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+
   docker:
     runs-on: ubuntu-latest
     name: Publish on DockerHub
@@ -28,11 +49,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Search
-        run: |
-          pwd
-          ls -la
-
       - name: Build and push
         id: push_image
         uses: docker/build-push-action@v2
@@ -45,11 +61,23 @@ jobs:
         id: set_current_tag_id
         run: echo "::set-output name=current_tag::${{ steps.tag_version.outputs.new_tag }}"
 
+      - name: Step To run on failure
+        if: ${{ failure() }}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: html
+          message: |
+            <b>!!! FAILED !!!</b>
+            <b>Failed job:</b> https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            See changes: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+
 
   telegram:
     runs-on: ubuntu-latest
     name: Notification
-    needs: docker
+    needs: [ prepare, docker ]
     steps:
 
       - name: Notify in telegram after image was pushed
@@ -61,7 +89,7 @@ jobs:
           message: |
             ${{ github.actor }} created commit:
 
-            <b>WorkFlows:</b> https://github.com/${{ github.repository }}/actions
+            <b>WorkFlows:</b> <a href="https://github.com/${{ github.repository }}/actions">ActionsList</a>
 
             Commit with tag: ${{ needs.docker.outputs.get_current_tag }}
 
